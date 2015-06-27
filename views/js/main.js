@@ -519,7 +519,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var s = 256;
   var height = window.innerHeight / s;
   var pizzas = height * cols
-  //Optimization: Reduced the number of sliding pizzas to 200.
+  //Optimization: uses the innerHeight of the window to determine how many sliding pizzas are needed.
   for (var i = 0; i < pizzas; i++) {
     var elem = document.createElement('img');
     elem.className = 'mover';
